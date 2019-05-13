@@ -1,0 +1,33 @@
+{
+    "Successful": [
+        {
+            "Id": "0",
+            "MessageId": "string",
+            "MD5OfMessageBody": "string",
+            "MD5OfMessageAttributes": "string",
+            "SequenceNumber": "string"
+        },
+        {
+            "Id": "1",
+            "MessageId": "string",
+            "MD5OfMessageBody": "string",
+            "MD5OfMessageAttributes": "string",
+            "SequenceNumber": "string"
+        },
+        {
+            "Id": "2",
+            "MessageId": "string",
+            "MD5OfMessageBody": "string",
+            "MD5OfMessageAttributes": "string",
+            "SequenceNumber": "string"
+        }
+    ],
+    "Failed": [
+        {
+            "Id": "3",
+            "SenderFault": true,
+            "Code": "string",
+            "Message": "string"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "Attributes": {
+        "some_attribute": {"S": "some_value"},
+        "some_other_attribute": {"N": "123"},
+        "some_boolean_attribute": {"BOOL": true}
+    },
+    "ConsumedCapacity": {
+        "TableName": "TestTable",
+        "CapacityUnits": 123.0,
+        "ReadCapacityUnits": 123.0,
+        "WriteCapacityUnits": 123.0,
+        "Table": {
+            "ReadCapacityUnits": 123.0,
+            "WriteCapacityUnits": 123.0,
+            "CapacityUnits": 123.0
+        },
+        "LocalSecondaryIndexes": {
+            "string": {
+                "ReadCapacityUnits": 123.0,
+                "WriteCapacityUnits": 123.0,
+                "CapacityUnits": 123.0
+            }
+        },
+        "GlobalSecondaryIndexes": {
+            "string": {
+                "ReadCapacityUnits": 123.0,
+                "WriteCapacityUnits": 123.0,
+                "CapacityUnits": 123.0
+            }
+        }
+    },
+    "ItemCollectionMetrics": {
+        "ItemCollectionKey": {
+            "some_key": {"S": "some_key_value"}
+        },
+        "SizeEstimateRangeGB": [
+            123.0
+        ]
+    }
+}

@@ -1,0 +1,126 @@
+{
+        "Records": [
+            {
+                "eventID": "c4ca4238a0b923820dcc509a6f75849b",
+                "eventName": "INSERT",
+                "eventVersion": "1.1",
+                "eventSource": "aws:dynamodb",
+                "awsRegion": "us-east-1",
+                "dynamodb": {
+                    "Keys": {
+                        "event_id": {
+                            "S": "some_flow#some_run!WorkflowStarted"
+                        },
+                        "event_timestamp": {
+                          "N": "1234.231"
+                        }
+                    },
+                    "NewImage": {
+                      "event_id": {
+                        "S": "some_flow#some_run!WorkflowStarted"
+                      },
+                      "event_timestamp": {
+                        "N": "1234.231"
+                      },
+                      "event_type": {
+                        "S": "WorkflowStarted"
+                      },
+                      "event_details": {
+                        "M": {
+                          "flow_type": "test_flow_type",
+                          "input_args": ""
+                        }
+                      }
+                    },
+                    "ApproximateCreationDateTime": 1428537600,
+                    "SequenceNumber": "4421584500000000017450439091",
+                    "SizeBytes": 26,
+                    "StreamViewType": "NEW_IMAGES"
+                },
+                "eventSourceARN": "arn:aws:dynamodb:us-east-1:123456789012:table/ExampleTableWithStream/stream/2015-06-27T00:48:05.899"
+            },
+            {
+                "eventID": "c81e728d9d4c2f636f067f89cc14862c",
+                "eventName": "INSERT",
+                "eventVersion": "1.1",
+                "eventSource": "aws:dynamodb",
+                "awsRegion": "us-east-1",
+                "dynamodb": {
+                    "Keys": {
+                        "event_id": {
+                            "S": "some_flow#some_run#some_task!TaskScheduled"
+                        },
+                        "event_timestamp": {
+                          "N": "1234.231"
+                        }
+                    },
+                    "NewImage": {
+                        "event_id": {
+                            "S": "some_flow#some_run#some_task!TaskScheduled"
+                        },
+                        "event_timestamp": {
+                          "N": "1334.231"
+                        },
+                      "event_type": {
+                        "S": "TaskScheduled"
+                      },
+                      "event_details": {
+                        "M": {
+                          "source_event_id": "some_flow#some_run!WorkflowStarted",
+                          "task_type": "some_flow",
+                          "task_list": "some_task",
+                          "input_args": ""
+                        }
+                      }
+                    },
+                    "ApproximateCreationDateTime": 1428537600,
+                    "SequenceNumber": "4421584500000000017450439091",
+                    "SizeBytes": 26,
+                    "StreamViewType": "NEW_AND_OLD_IMAGES"
+                },
+                "eventSourceARN": "arn:aws:dynamodb:us-east-1:123456789012:table/ExampleTableWithStream/stream/2015-06-27T00:48:05.899"
+            },
+            {
+                "eventID": "eccbc87e4b5ce2fe28308fd9f2a7baf3",
+                "eventName": "REMOVE",
+                "eventVersion": "1.1",
+                "eventSource": "aws:dynamodb",
+                "awsRegion": "us-east-1",
+                "dynamodb": {
+                    "Keys": {
+                        "event_id": {
+                            "S": "some_flow#some_run#some_task!TaskStarted"
+                        },
+                        "event_timestamp": {
+                          "N": "1534.231"
+                        }
+                    },
+                    "NewImage": {
+                        "event_id": {
+                            "S": "some_flow#some_run#some_task#some_task_run!TaskStarted"
+                        },
+                        "event_timestamp": {
+                          "N": "1234.231"
+                        },
+                      "event_type": {
+                        "S": "TaskStarted"
+                      },
+                       "event_details": {
+                        "M": {
+                          "source_event_id": "some_flow#some_run#some_task#some_task_run!TaskScheduled",
+                          "task_type": "some_task",
+                          "task_id": "some_task",
+                          "task_list": "some_task_list",
+                          "input_args": "{\"some\": \"arguments\"}"
+                        }
+                      }
+                    },
+                    "ApproximateCreationDateTime": 1428537600,
+                    "SequenceNumber": "4421584500000000017450439091",
+                    "SizeBytes": 26,
+                    "StreamViewType": "NEW_AND_OLD_IMAGES"
+                },
+                "eventSourceARN": "arn:aws:dynamodb:us-east-1:123456789012:table/ExampleTableWithStream/stream/2015-06-27T00:48:05.899"
+            }
+        ]
+    }
